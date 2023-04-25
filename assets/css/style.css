@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: mylogoFont;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: formHeaderFont;
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: formInputFont;
+    src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+:root{
+--orange-50: #f58700;
+--orange-40: #ffac47;
+--orange-30: #ffc885;
+--prairieGreen: #4ca300;
+--chaiTea: #a9792b;
+--midnightNavy: #374151;
+--midnightExpress: #1f2937;
+--dreamyCloud: #e5e7eb;
+--harlocksCape: #b80000;
+--celebralGrey: #ccc;
+--persianLuxuryPurple: #940079;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+/* Picture section */
+
+.picture {
+    background-image: url(../img/julian-cardenas-c62eiLfzBC8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    margin-top: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: mylogoFont;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.source {
+    font-size: 0.6rem;
+    color: #fff;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.source a {
+    text-decoration: none;
+    color: var(--chaiTea);
+}
+
+.sign-up-form {
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+}
+
+/* Information section */
+
+.information {
+    padding: 1rem 1rem 1rem 1.5rem;
+    background-color: var(--dreamyCloud);
+    color: var(--midnightExpress);
+    display: grid;
+    justify-items: start;
+    align-items: end;
+}
+
+.information-container p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+strong {
+    color: var(--prairieGreen);
+}
+
+.information-container p + p {
+    margin-top: 1rem;
+    color: #000000;
+    font-size: 1rem;
+}
+
+/* Form section */
+
+.container {
+    padding: 1rem 1rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container-header {
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+    font-family: formHeaderFont;
+    letter-spacing: 0.05rem;
+}
+
+form {
+    flex: 1;
+    width: 100%;
+    font-family: formInputFont;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+}
+
+.input-container {
+    width: 100%;
+    height: 100%;
+}
+
+.input-container label {
+    display: inline-block;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-family: formHeaderFont;
+    text-transform: uppercase;
+    color: var(--midnightExpress);
+}
+
+input:not(.hidden) {
+    margin-top: 0.3rem;
+    padding: 0.4rem 0.4rem 0.4rem 0.5rem;
+    display: block;
+    width: 90%;
+    font-family: formHeaderFont;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--celebralGrey);
+    transition: all 0.5s ease-in;
+}
+
+input::placeholder {
+    content: none;
+}
+
+input[type="submit"] {
+    display: none;
+} 
+
+/* Submit section */
+
+.submit {
+    padding: 1rem 1rem 1rem 1.5rem;
+    background-color: var(--dreamyCloud);
+    color: var(--midnightExpress);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    gap: 1.5rem;
+}
+
+.submit label {
+    font-family: formHeaderFont;
+    display: block;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    background-color: var(--chaiTea);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0, 0.2);
+    transition: all 0.05s;
+}
+
+.submit label:hover {
+    background-color: var(--prairieGreen);
+}
+
+.submit label:active {
+    background-color: var(--prairieGreen);
+    transform: scale(1.04);
+}
+
+.submit p {
+    font-weight: 500;
+}
+
+.submit p a {
+    text-decoration: none;
+    color: var(--chaiTea);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

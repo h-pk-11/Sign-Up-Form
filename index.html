@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+    <title>Sign up</title>
 </head>
 <body>
+    <div class="content">
+       
+        <div class="picture">
+            <div class="logo"><img src="./assets/img/odin-lined.png" alt="dragonfly"> ODIN</div>
+            <div class="source">
+                <p>Photo by <a href="https://unsplash.com/@julicargue">Julián Cárdenas</a> on Unplash</p>
+            </div>
+        </div>
+
+        <div class="sign-up-form">
+
+            <div class="information">
+                <div class="information-container">
+
+                    <p><q><i>Rain is my best <strong>companion</strong>  to spend my time with. It's a feeling. Enjoying rain with a cup of tea or some snack under blanket, being alone in the room with a slight soft music, that's the best <strong>therapy</strong> to heal everyone's souls.</i></q></p>
+                    <p>Sign up <strong>now</strong> and get started.</p>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="container-header"><h3>Let's do this!</h3></div>
+                <form action="#" method="post" >
+                    <div class="input-container">
+                        <label for="">first name</label>
+                        <input type="text" id="input-first-name" name="input-first-name" required>
+                        <div class="error"></div>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="">last name</label>
+                        <input type="text" id="user-last-name" name="user-last-name" required>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">email</label>
+                        <input type="email" id="user-email" name="user-email" required>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">phone number</label>
+                        <input type="tel" id="user-phone" name="user-phone" required>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">password</label>
+                        <input type="password" id="user-pw" name="user-pw" required>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">confirm password</label>
+                        <input type="password" id="input-cpw" name="input-cpw" required>
+                        <div class="error"></div>
+                    </div>
+
     
+                    <input type="submit" id="submit-form" class="hidden">
+                </form>
+
+            </div>
+
+            <div class="submit">
+
+                <label for="submit-form" tabindex="0">Create Account</label>
+
+                <p>Already have an account? <a href="#">Log in</a></p>
+
+            </div>
+
+        </div>
+        
+    </div>
 </body>
 </html>
