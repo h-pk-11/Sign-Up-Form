@@ -12,7 +12,7 @@
     <div class="content">
        
         <div class="picture">
-            <div class="logo"><img src="./assets/img/odin-lined.png" alt="dragonfly"> ODIN</div>
+            <div class="logo"><img src="./assets/img/odin-lined.png" alt="dragonfly">ODIN</div>
             <div class="source">
                 <p>Photo by <a href="https://unsplash.com/@julicargue">Julián Cárdenas</a> on Unplash</p>
             </div>
@@ -31,44 +31,65 @@
 
             <div class="container">
                 <div class="container-header"><h3>Let's do this!</h3></div>
-                <form action="#" method="post" >
+                <form id="form">
                     <div class="input-container">
-                        <label for="">first name</label>
-                        <input type="text" id="input-first-name" name="input-first-name" required>
-                        <div class="error"></div>
+                        <input type="text" id="user-first-name" name="user-first-name" 
+                        required
+                        >
+                        <label for="user-first-name">first name
+                        </label>
+                        <span class="error"></span>
                     </div>
                     
                     <div class="input-container">
-                        <label for="">last name</label>
-                        <input type="text" id="user-last-name" name="user-last-name" required>
-                        <div class="error"></div>
+                        <input 
+                        type="text" 
+                        id="user-last-name" name="user-last-name"
+                        required>
+                        <label for="user-last-name">last name</label>
+                        <span class="error"></span>
                     </div>
 
                     <div class="input-container">
-                        <label for="">email</label>
-                        <input type="email" id="user-email" name="user-email" required>
-                        <div class="error"></div>
+                        <input 
+                        type="email" 
+                        id="user-email" 
+                        name="user-email" 
+                        required>
+                        <label for="user-email">email</label>
+                        <span class="error"></span>
                     </div>
 
                     <div class="input-container">
-                        <label for="">phone number</label>
-                        <input type="tel" id="user-phone" name="user-phone" required>
-                        <div class="error"></div>
+                        <input 
+                        type="tel" 
+                        id="user-phone" 
+                        name="user-phone" 
+                        required>
+                        <label for="user-phone">phone number</label>
+                        <span class="error"></span>
                     </div>
 
                     <div class="input-container">
-                        <label for="">password</label>
-                        <input type="password" id="user-pw" name="user-pw" required>
-                        <div class="error"></div>
+                        <input 
+                        type="password" 
+                        id="user-pw" 
+                        name="user-pw" 
+                        required>
+                        <label for="user-pw">password</label>
+                        <span class="error"></span>
                     </div>
 
                     <div class="input-container">
-                        <label for="">confirm password</label>
-                        <input type="password" id="input-cpw" name="input-cpw" required>
-                        <div class="error"></div>
+                        <input 
+                        type="password" 
+                        id="user-cpw" 
+                        name="user-cpw" 
+                        required>
+                        <label for="user-cpw">confirm password</label>
+                        <span class="error"></span>
                     </div>
 
-    
                     <input type="submit" id="submit-form" class="hidden">
                 </form>
 
