@@ -125,6 +125,7 @@ strong {
 
 .container {
     padding: 1rem 1rem 1rem 1.5rem;
+    background-color: #fff;;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
