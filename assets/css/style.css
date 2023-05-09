@@ -54,11 +54,12 @@
     background-position: center;
     overflow: hidden;
     position: relative;
+    background-color: #fff;;
 }
 
 .logo {
-    margin-top: 6rem;
-    height: 6rem;
+    margin-top: 25%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +72,7 @@
 }
 
 .logo img {
-    height: 70px;
+    height: 80%;
 }
 
 .source {
@@ -91,7 +92,7 @@
 
 .sign-up-form {
     display: grid;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: minmax(25%, 1fr) minmax(auto, 350px) minmax(25%, 1px);
 }
 
 /* Information section */
